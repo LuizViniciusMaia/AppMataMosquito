@@ -1,0 +1,51 @@
+html {
+    cursor: url(imagens/mata_mosquito.png) 30 30, auto; /*Mudando o cursor para requete*/
+}
+
+body { /*Definindo o cenário de fundo*/
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*Definindo os estilos para tres mosquitos diferentes*/
+.mosquito1 {
+    width: 50px;
+    height: 50px;
+}
+.mosquito2 {
+    width: 70px;
+    height: 70px;
+}
+.mosquito3 {
+    width: 90px;
+    height: 90px;
+}
+
+.ladoA { /*não era necessário criar um lado A, pois a imagem já está desse lado*/
+   transform:scaleX(1); 
+}
+.ladoB { /*Realizando o Flip*/
+   transform:scaleX(-1); 
+}
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}

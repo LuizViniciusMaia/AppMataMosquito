@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Mata Mosquito</title>
+    <link rel="stylesheet" href="estilo.css" />
+    
+    <script src="jogo.js"></script>
+    
+</head>
+<body onresize="DimensaoJogo()"> <!--Evento onresize para ativar a função das dimensões quando o usuario diminuir ou aumentar o tamanho da pagina-->
+    
+    <div class="painel"> <!--Painel inferior para mostrar a vida e o cronometro-->
+
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png"/>
+            <img id="v2" src="imagens/coracao_cheio.png"/>
+            <img id="v3" src="imagens/coracao_cheio.png"/>
+        </div>
+
+        <div class="cronometro">Tempo Restante: <span id="cronometro"></span> </div>
+
+    </div>
+
+    <script> //Foi necessario chamar a função dentro do body porque quando era lido a linha 7, ainda não existia o body.
+        
+        document.getElementById('cronometro').innerHTML = tempo //chamando aqui no body para que quando o script rodar já existe o ID cronometro, fica de forma dinamica a alteração do tempo.
+
+        var criaMosquito = setInterval(function() { //Definindo um intervalo para que a minha função ramdomica funcione, para sempre estar pingando mosquito na tela.
+            PosicaoRandomica()
+        }, tempoCriaMosquito)
+
+    </script>
+
+</body>
+</html>
