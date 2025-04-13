@@ -28,8 +28,8 @@ em páginas Web.
 ---
 
 
-🧑‍💻 Autor
+🧑‍💻 Autor:
 Feito por Luiz Vinicius Maia.
 
-📄 Licença
+📄 Licença:
 Este projeto está sob a licença MIT.
